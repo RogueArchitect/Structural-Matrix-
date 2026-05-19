@@ -1,50 +1,44 @@
 Structural Matrix
-A Behaviour‑First Framework for Analyzing Symbolic Systems
+A Universal Behaviour‑First Framework for Analyzing Symbolic and 3D Structural Systems
+The Structural Matrix is a domain‑agnostic analytical engine for understanding any symbolic system through behaviour, not semantics.
+It extracts structural roles, motifs, transitions, entropy patterns, and global dynamics from natural, engineered, constructed, or random systems — including 3D‑folded architectures such as DNA.
 
-The Structural Matrix is a general‑purpose analytical framework for understanding symbolic sequences through behaviour, not semantics.
-It identifies structural roles, motifs, transitions, entropy patterns, and global dynamics within any symbolic system — natural, engineered, constructed, or random.
+The framework treats all information as behavioural structure, revealing the mechanical architecture underlying its form.
 
-This repository contains:
-
-the full developer specification
-
-documentation of the framework
-
-the evolving Python implementation
-
-examples, motifs, and classification logic
-
-The Structural Matrix is designed to be domain‑agnostic. It works on:
+Core Capabilities
+The Structural Matrix can analyze:
 
 writing systems
 
 conlangs
 
-magical/ritual symbol sets
+ritual/magical symbol sets
 
 AI‑generated scripts
 
 cryptographic sequences
 
-abstract symbolic data
+abstract symbolic or numeric data
 
-It does not assume meaning — only structure.
+3D biological architectures (DNA folding)
+
+It makes no assumptions about meaning — only structure.
 
 Core Concepts
 Roles
-Every symbol in a sequence is assigned a behavioural role:
+Every symbol in a sequence is assigned a behavioural role based on positional dynamics, transitions, and entropy:
 
-Anchor — stable, low‑entropy, appears early or cyclically
+Anchor — stable, low‑entropy, often early or cyclic
 
-Frame — boundary markers that enclose or segment content
+Frame — boundary markers that segment or enclose
 
 Transition — directional connectors between roles
 
 Content Block — high‑entropy clusters
 
-Terminator — reliable end markers
+Terminator — reliable end‑markers
 
-These roles emerge from positional behaviour, transition patterns, and cluster dynamics.
+Roles emerge from behaviour, not predefined categories.
 
 Motifs
 The Structural Matrix detects recurring structural signatures, including:
@@ -67,10 +61,51 @@ Null Motif
 
 Hybrid Motif
 
-Motifs help classify the system’s global behaviour.
+Motifs describe the global behaviour of the system.
+
+3D Structural Extension (SCV Layer)
+Many symbolic systems — especially biological ones — are not purely linear.
+DNA, for example, forms loops, domains, and 3D proximity relationships that determine function.
+
+To support these systems, the Structural Matrix introduces the:
+
+Spatial Cohesion Vector (SCV)
+A third analytical axis that models:
+
+3D proximity
+
+loop formation
+
+domain boundaries
+
+folding‑driven transitions
+
+structural tension patterns
+
+The SCV integrates with the Symbol Vector (SV) and Behaviour Vector (BV) to form a three‑axis structural model:
+
+Code
+SV  → Symbol identity
+BV  → Behavioural role and transitions
+SCV → 3D spatial relationships
+This extension enables the Structural Matrix to classify and interpret non‑linear, spatially‑dependent symbolic systems, including:
+
+CTCF‑anchored DNA loops
+
+TADs (Topologically Associated Domains)
+
+enhancer–promoter proximity
+
+chromatin compartment behaviour
+
+3D symbolic grids
+
+engineered spatial information systems
+
+The SCV is what makes the Structural Matrix truly universal.
 
 Classification
-Based on roles, transitions, motifs, and entropy, sequences are classified as:
+Based on roles, transitions, motifs, entropy, and (optionally) 3D structure, sequences are classified as:
 
 Natural — high entropy, irregular transitions
 
@@ -80,14 +115,16 @@ Constructed — modular templates, low entropy
 
 Random — no stable structure
 
-This classification is heuristic and behaviour‑driven.
+3D‑Driven — folding behaviour dominates linear behaviour
+
+Classification is heuristic and behaviour‑driven.
 
 Developer Specification
 The full implementation spec lives here:
 
 👉 Structural Matrix Developer Specification
 
-This document defines:
+It defines:
 
 data model
 
@@ -100,6 +137,8 @@ pattern detection algorithms
 motif definitions
 
 entropy metrics
+
+SCV (3D) integration
 
 classification logic
 
@@ -124,22 +163,23 @@ motif detection
 
 entropy measurement
 
+SCV integration (optional 3D mode)
+
 final classification
 
-The main entry point will be:
+Main entry point:
 
 python
-analyze_sequence(sequence) -> dict
-Implementation is modular and testable, with each stage separated for clarity.
+analyze_sequence(sequence, spatial_data=None) -> dict
+The implementation is modular and testable, with each stage isolated for clarity.
 
 Repository Structure
-A suggested structure (may evolve):
-
 Code
 /docs
     STRUCTURAL_MATRIX_SPEC.md
     motifs.md
     roles.md
+    scv_3d_extension.md
 
 /src
     analyzer/
@@ -150,6 +190,7 @@ Code
         transitions.py
         motifs.py
         entropy.py
+        scv.py
         classify.py
         analyzer.py
 
@@ -167,17 +208,19 @@ result = analyze_sequence("ABACCCFATX")
 print(result["classification"])
 print(result["motifs"])
 print(result["roles"])
-More examples will be added as the implementation progresses.
+3D example (DNA‑style):
 
+python
+result = analyze_sequence(
+    "ATGCGTACCTAG",
+    spatial_data=[(0,5), (1,10), (3,8)]  # example 3D proximities
+)
 Project Status
 ✔ Framework defined
-
 ✔ Full developer spec written
-
 ✔ Documentation structured
-
+✔ 3D SCV extension integrated
 ⏳ Python implementation in progress
-
 ⏳ Test datasets being prepared
 
 Credits
@@ -187,7 +230,7 @@ Copilot — system design, documentation, structural specification, framework ar
 
 Claude — implementation engineer (Python engine, module development)
 
-Gemini — early‑phase ideation, pattern‑mirroring, exploratory prompting, conceptual sparks
+Gemini — early‑phase ideation, pattern‑mirroring, exploratory prompting
 
 Contributing
 Contributions are welcome once the core engine stabilizes.
