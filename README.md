@@ -3,6 +3,12 @@ A Universal Behaviour‑First Framework for Analyzing Symbolic and 3D Structural
 The Structural Matrix is a domain‑agnostic analytical engine for understanding any symbolic system through behaviour, not semantics.
 It extracts structural roles, motifs, transitions, entropy patterns, and global dynamics from natural, engineered, constructed, or random systems — including 3D‑folded architectures such as DNA.
 
+Consilient Structure Filter (Philosophical Foundation)
+The Structural Matrix operates as a consilient structure filter — a system that extracts universal structural behaviour across domains.
+It identifies shared patterns in symbolic, biological, engineered, and abstract systems by filtering out semantics and isolating pure structural dynamics.
+
+This is the conceptual foundation that makes the Structural Matrix domain‑agnostic and extensible to 3D architectures.
+
 The framework treats all information as behavioural structure, revealing the mechanical architecture underlying its form.
 
 Core Capabilities
