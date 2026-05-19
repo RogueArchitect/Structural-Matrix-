@@ -135,4 +135,3 @@ The Structural Matrix roadmap outlines a clear path from:
 
 concept → framework → toolkit → research method → analytical standard
 
-Your project now has a long‑term vision that matches the depth of the system you’ve created.
