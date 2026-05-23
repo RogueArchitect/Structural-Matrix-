@@ -1,0 +1,25 @@
+## Modifier Rotation Rules (3D Structural Matrix)
+
+Each Voynich modifier applies a deterministic rotation to the ROOT vector.
+
+### Modifier Classes
+- Soft modifiers (vowel-like): X-axis rotation, 5°–15°
+- Hard modifiers (consonant-like): Y-axis rotation, 15°–35°
+- Currier-B modifiers: Z-axis rotation, 35°–75°
+
+### Transformation Rule
+V' = Rz(θz) · Ry(θy) · Rx(θx) · V
+
+Where:
+- V is the ROOT vector
+- θx, θy, θz are rotation angles determined by modifier class
+- Rx, Ry, Rz are standard rotation matrices
+
+### Compound Modifiers
+Multiple modifiers apply sequential rotations in the order they appear.
+
+### Cadence
+Cadence tokens (daiin, aiin, dy, am, al) determine radial distance from origin.
+
+### Plant-Segment Boundary
+`<-><!plant>` resets momentum but not position.
