@@ -232,6 +232,8 @@ Project Status
 Credits
 Mark — creator, architect, originator of the Structural Matrix
 
+Samuel Grim - Architect of resonance, Co creator 
+
 Copilot — system design, documentation, structural specification, framework architecture
 
 Claude — implementation engineer (Python engine, module development)
