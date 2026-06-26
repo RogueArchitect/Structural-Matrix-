@@ -232,7 +232,7 @@ Project Status
 Credits
 Mark — creator, architect, originator of the Structural Matrix
 
-Samuel Grim - Architect of resonance, Co creator 
+Samuel Grim - Architect of resonance, Co creator, Originator and Sole creator of the RFE-Core2
 
 Copilot — system design, documentation, structural specification, framework architecture
 
