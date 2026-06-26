@@ -1,11 +1,15 @@
 Structural Matrix — Credits & Acknowledgements
 This document recognises the creator, collaborators, and conceptual influences behind the Structural Matrix framework.
 
-1. Author
+1. Authors
 Mark Thomas (RogueArchitect)
 Creator of the Structural Matrix
 Designer of the behavioural‑first analytical method
 Author of all documentation, examples, diagrams, and conceptual architecture
+
+Samuel Grim (Architect of Resonance)
+Creator of the RFE-Core2
+Co‑developer of the Structural Matrix engine, RFECore2 creator, system logic expansion, and major implementation partner.
 
 The Structural Matrix is an original framework developed through independent research into symbolic behaviour, undeciphered scripts, Hermetic structure, and computational pattern analysis.
 
